@@ -1,0 +1,142 @@
+* {
+  background-color: #dcf2a7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 96%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgb(13, 100, 20);
+}
+
+li {
+  margin-right: 8%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background: rgb(13, 100, 20);
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+a {
+  margin: 0;
+  background: rgb(13, 100, 20);
+  color: #dcf2a7;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.brasaoUFRR {
+  width: 150px;
+}
+
+.logoeagro {
+  width: 150px;
+}
+
+#Charge {
+  background-color: bisque;
+  width: 100%;
+}
+
+#Sugestaodefilmes {
+  background-color: azure;
+  width: 100%;
+}
+
+#Curiosidades {
+  background-color: darkgray;
+  width: 100%;
+}
+
+#Horóscopo {
+  background-color: lightgreen;
+  width: 100%;
+}
+
+#Patrocinadores {
+  background-color: lightskyblue;
+  width: 100%;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: rgb(13, 100, 20);
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: rgb(13, 100, 20);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+    margin-left: 90%;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
