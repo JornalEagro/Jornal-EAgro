@@ -54,36 +54,35 @@ body{
   }
 
   #Charge {
-    width: 75%;
+    width: 60%;
     text-align: center;
     font-size: 50px;
     margin: 0 auto;
   }
 
   #Sugestaodefilmes {
-    width: 75%;
+    width: 60%;
     text-align: center;
     font-size: 50px;
     margin: 0 auto;
   }
 
   #Curiosidades {
-    width: 75%;
+    width: 60%;
     text-align: center;
     font-size: 50px;
     margin: 0 auto;
   }
 
   #Horóscopo {
-    width: 75%;
+    width: 60%;
     text-align: center;
     font-size: 50px;
     margin: 0 auto;
   }
 
   #Patrocinadores {
-    width: 75%;
-
+    width: 60%;
     text-align: center;
     font-size: 50px;
     margin: 0 auto;
