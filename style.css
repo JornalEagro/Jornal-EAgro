@@ -6,10 +6,6 @@ body{
     scroll-behavior: smooth;
   }
 
-.logo{
-  height: 200px;
-}
-
   nav ul {
     list-style: none;
     display: flex;
@@ -51,6 +47,10 @@ body{
 
   .logoeagro {
     width: 150px;
+  }
+
+  .logo{
+    height: 200px;
   }
 
   #Charge {
@@ -228,8 +228,25 @@ h2::before {
     }
   }
 
+  .logo{
+    width: 15%;
+    height: 15%;
+  }
+
+  .logoeagro{
+    width: 15%;
+  }
+
+  .brasaoUFRR{
+    width: 15%;
+  }
+
   .nav-list.active {
     transform: translateX(0);
+  }
+
+  .comentarios{
+    width: 50%;
   }
 
   @keyframes navLinkFade {
