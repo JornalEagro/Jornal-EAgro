@@ -1,145 +1,256 @@
-* {
+body{
   background-color: #dcf2a7;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  width: 96%;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  background: rgb(13, 100, 20);
-}
-
-li {
-  margin-right: 8%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  background: rgb(13, 100, 20);
-}
-
-section {
-  min-height: 100vh;
-  padding-top: 2rem;
-}
-
-a {
-  margin: 0;
-  background: rgb(13, 100, 20);
-  color: #dcf2a7;
-  text-decoration: none;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.brasaoUFRR {
-  width: 150px;
-}
-
-.logoeagro {
-  width: 150px;
-}
-
-#Charge {
-  background-color: bisque;
-  width: 100%;
-}
-
-#Sugestaodefilmes {
-  background-color: azure;
-  width: 100%;
-}
-
-#Curiosidades {
-  background-color: darkgray;
-  width: 100%;
-}
-
-#Horóscopo {
-  background-color: lightgreen;
-  width: 100%;
-}
-
-#Patrocinadores {
-  background-color: lightskyblue;
-  width: 100%;
-}
-
-.mobile-menu div {
-  width: 32px;
-  height: 2px;
-  background: rgb(13, 100, 20);
-  margin: 8px;
-  transition: 0.3s;
-}
-
-.mobile-menu {
-  display: none;
-  cursor: pointer;
-}
-
-@media (max-width: 999px) {
-  body {
-    overflow-x: hidden;
+  html {
+    scroll-behavior: smooth;
   }
-  .nav-list {
-    position: fixed;
-    top: 30vh;
-    right: 0;
-    width: 250px;
-    height: 50%;
+
+.logo{
+  height: 200px;
+}
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     background: rgb(13, 100, 20);
-    flex-direction: column;
+  }
+
+  li {
+    margin-right: 8%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background: rgb(13, 100, 20);
+  }
+
+  section {
+    min-height: 100vh;
+    padding-top: 2rem;
+  }
+
+  a {
+    margin: 0;
+    background: rgb(13, 100, 20);
+    color: #dcf2a7;
+    text-decoration: none;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+    width: 100%;
   }
-  .nav-list li {
-    margin-left: 0;
-    opacity: 0;
+
+  .brasaoUFRR {
+    width: 150px;
   }
+
+  .logoeagro {
+    width: 150px;
+  }
+
+  #Charge {
+    width: 75%;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+
+  #Sugestaodefilmes {
+    width: 75%;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+
+  #Curiosidades {
+    width: 75%;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+
+  #Horóscopo {
+    width: 75%;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+
+  #Patrocinadores {
+    width: 75%;
+
+    text-align: center;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: rgb(13, 100, 20);
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
   .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+
+  .materias { 
     display: block;
-    margin-left: 90%;
-    position: fixed;
-    background: none;
-  }
+    text-align: center;
 }
 
-.nav-list.active {
-  transform: translateX(0);
+.comentarios {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: darkgreen;
+  width: 30%;
+  border-radius: 3%;
+  margin: 0 auto;
 }
 
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+.comentarios h1,
+.comentarios h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+h1::before {
+  display: block;
+}
+
+h2::before {
+  display: block;
+}
+
+.form {
+  width: 100%;
+  max-width: 32rem;
+  font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea,
+.form button {
+  display: block;
+  width: 100%;
+}
+
+.form label {
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.form input,
+.form textarea {
+  font: inherit;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea {
+  min-height: 13rem;
+  resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+  outline: none;
+}
+
+.form button {
+  display: block;
+  padding: 1rem;
+
+  color: #fff;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form button:hover,
+.form button:focus {
+  outline: none;
+
+}
+
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: fixed;
+      top: 30vh;
+      right: 0;
+      width: 250px;
+      height: 50%;
+      background: rgb(13, 100, 20);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+      margin-left: 90%;
+      position: fixed;
+      background: none;
+    }
   }
-  to {
-    opacity: 1;
+
+  .nav-list.active {
     transform: translateX(0);
   }
-}
 
-.mobile-menu.active .line1 {
-  transform: rotate(-45deg) translate(-8px, 8px);
-}
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
-.mobile-menu.active .line2 {
-  opacity: 0;
-}
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
 
-.mobile-menu.active .line3 {
-  transform: rotate(45deg) translate(-5px, -7px);
-}
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
 
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }

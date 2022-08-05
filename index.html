@@ -1,61 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News Eagro</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="box">
-      <div class="container">
-        <img
-          class="brasaoUFRR"
-          src="imagens/Brasão_da_UFRR.png"
-          alt="img-reponsive"
-        />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>News Eagro</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-        <img class="logo" src="" alt="logo-responsive" />
+    <body>
+        <div class="box">
+            <div class="container">
+                <img
+                    class="brasaoUFRR"
+                    src="imagens/Brasão_da_UFRR.png"
+                    alt="img-reponsive"
+                />
 
-        <img class="logoeagro" src="imagens/logotipo.png" alt="img-reponsive" />
-      </div>
+        <img class="logo" src="imagens/logo_jornaal-removebg-preview.png" alt="logo-responsive" />
 
-      <header>
-        <nav>
-          <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-          <ul class="nav-list">
-            <li><a href="#Susgestão de filmes">Susgestão de filmes</a></li>
-            <li><a href="#Charge">Charge</a></li>
-            <li><a href="#Curiosidades">Curiosidades</a></li>
-            <li><a href="#Horóscopo">Horóscopo</a></li>
-            <li><a href="#Patrocinadores">Patrocinadores</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-      <h1>comunidade em foco</h1>
-      <h1>Voz da comunidade</h1>
-      <h1>Sala de aula</h1>
-      <h1>Enquanto isso na Eagro</h1>
-      <h1>Projetos</h1>
-      <h1>Relatos</h1>
-      
-      <main>
-        <section id="Sugestaodefilmes">Sugestão de filmes</section>
-        <section id="Charge">Charge</section>
-        <section id="Curiosidades">Curiosidades</section>
-        <section id="Horóscopo">Horóscopo</section>
-        <section id="Patrocinadores">Patrocinadores</section>
-      </main>
+        <img class="logoeagro" src="imagens/logotipo (1).png" alt="img-reponsive" />
+            </div>
 
-      
+        <header>
+            <nav>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
 
-      <script src="script.js"></script>
-    </div>
-  </body>
+                <ul class="nav-list">
+                    <li><a href="#Susgestão de filmes">Susgestão de filmes</a></li>
+                    <li><a href="#Charge">Charge</a></li>
+                    <li><a href="#Curiosidades">Curiosidades</a></li>
+                    <li><a href="#Horóscopo">Horóscopo</a></li>
+                    <li><a href="#Patrocinadores">Patrocinadores</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="materias">
+            <h1>Materia destaque</h1>
+            <h2>Entrevista da edição</h2>
+            <h2>Comunidade em foco</h2>
+            <h2>Voz da comunidade</h2>
+            <h2>Seção sala de aula</h2>
+            <h2>Enquanto isso na Eagro</h2>
+            <h2>coluna de esportes</h2>
+            <h2>Olhar digital</h2>
+            <h2>Relatos</h2>
+        </div>
+
+        <main>
+            <section id="Sugestaodefilmes">Sugestão de filmes</section>
+            <section id="Charge">Charge</section>
+            <section id="Curiosidades">Curiosidades</section>
+            <section id="Horóscopo">Horóscopo</section>
+            <section id="Patrocinadores">Patrocinadores</section>
+        </main>
+
+        <div class="comentarios">
+            <h1>O que podemos melhorar?</h1>
+            <form action="https://formsubmit.co/pedro.mc.timoteo@gmail.com" method="POST" class="comentarios">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required>
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" placeholder="Escreva aqui" required></textarea>
+                <input type="hidden" name="_captcha" value="false" />
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+            <script src="script.js"></script>
+        </div>
+    </body>
 </html>
