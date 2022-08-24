@@ -61,17 +61,21 @@ body{
     }
 
     #Sugestaodefilmes {
-      width: 60%;
+      width: 100%;
       text-align: center;
       font-size: 50px;
       margin: 0 auto;
     }
 
     #Curiosidades {
-      width: 60%;
+      width: 100%;
       text-align: center;
       font-size: 50px;
       margin: 0 auto;
+    }
+
+    #Curiosidades > img{
+      width: 80%;
     }
 
     #Horóscopo {
@@ -101,16 +105,42 @@ body{
       cursor: pointer;
     }
 
+
     .materias { 
         display: block;
         text-align: center;
-        width: 1000px; 
+        width: 75%; 
         margin-left: auto;
         margin-right: auto; 
         padding: 0.8em;
         background-color: #fff;
         border-radius: 2rem;
         font-size: 2rem;
+        justify-items: cente;
+    }
+
+    .duplas{
+      display: flex;
+      width: 100%;
+    }
+
+
+    .linha1{
+      width: 49%;
+      margin: 1%;
+      padding: 0,5%;
+    }
+
+    .linha2{
+      width: 49%;
+      margin: 1%;
+      padding: 0,5%;
+      border-width: 0,5%;
+      border-color: black;
+    }
+
+    p{
+      text-align: justify;
     }
 
 .comentarios {
